@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Calculadora';
+    src: url('fonts/Calculator.ttf') format('truetype');
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(72, 72, 156), rgb(120, 120, 146));
+}
+
+.container { 
+    background-color: rgba(77, 70, 70, 0.548);
+
+    height: 580px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    border-radius: 6px;
+    box-shadow: 1px 0px 4px 1px rgba(58, 55, 55, 0.418);
+    padding: 14px;
+}
+
+.resultado {
+    font-family: 'Calculadora';
+    width: 95.4%;
+    height: 85px;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    line-height: 90px;
+    font-size: 4em;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    width: 120px;
+    margin-bottom: 10px;
+    margin-left: 1.4px;
+    height: 83px;
+    background-color: rgba(71, 80, 109, 0.863);
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.582);
+    color: white;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.747);
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: rgba(78, 112, 223, 0.877);
+    font-weight: bolder;
+}
+
+.operador {
+    background-color: rgba(139, 139, 60, 0.808);
+}
+
+.others {
+    background-color: rgb(29, 67, 82);
+}
+
+#button-zero {
+    background-color: rgb(29, 67, 82);
+    width: 245px;
+    margin-right: 1px;
+}
+
+#button-zero:hover {
+    background-color: rgba(78, 112, 223, 0.877);
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 540px){
+    .container {
+        width: 440px;
+    }
+
+    button {
+        width: 105px;
+    }
+
+    #button-zero {
+        width: 214px;
+    }
+}
