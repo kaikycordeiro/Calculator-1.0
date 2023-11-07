@@ -92,7 +92,7 @@ button:hover {
 
 @media screen and (max-width: 540px){
     .container {
-        width: 440px;
+        max-width: 440px;
     }
 
     button {
